@@ -14,7 +14,7 @@ function solution(...args){
 
 
 function last(list){
-   let values = [...arguments];
+   const values = [...arguments];
    if (values.length > 1) {
       return values[values.length - 1];
    } else {
