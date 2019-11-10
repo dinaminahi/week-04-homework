@@ -4,3 +4,16 @@
 function always (n) {
    return () => n;
 }
+
+//https://www.codewars.com/kata/singleton-pattern/train/javascript
+
+
+class Singleton {
+    constructor() {
+       if(!Singleton.instance) {
+          Singleton.instance = this;
+       } else {
+          return Singleton.instance;
+       }
+    }
+}
